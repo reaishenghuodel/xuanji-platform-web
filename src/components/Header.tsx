@@ -46,7 +46,7 @@ function Header({ pageTitle, onMenuToggle }: HeaderProps) {
   return (
     <header
       className="flex items-center justify-between h-16 px-4 md:px-6 border-b flex-shrink-0"
-      style={{ backgroundColor: 'var(--color-bg-surface)', borderColor: 'var(--color-border-default)' }}
+      style={{ backgroundColor: 'rgba(30, 41, 59, 0.95)', backdropFilter: 'blur(12px)', borderColor: 'var(--color-border-default)' }}
     >
       <div className="flex items-center gap-3">
         <button
@@ -92,7 +92,7 @@ function Header({ pageTitle, onMenuToggle }: HeaderProps) {
 
           {notifOpen && (
             <div className="absolute right-0 top-12 w-80 rounded-xl border shadow-2xl z-50 overflow-hidden"
-              style={{ backgroundColor: 'var(--color-bg-surface)', borderColor: 'var(--color-border-default)' }}>
+              style={{ backgroundColor: 'rgba(30, 41, 59, 0.95)', backdropFilter: 'blur(12px)', borderColor: 'var(--color-border-default)' }}>
               <div className="flex items-center justify-between px-4 py-3 border-b"
                 style={{ borderColor: 'var(--color-border-default)' }}>
                 <span className="text-sm font-bold" style={{ color: 'var(--color-text-primary)' }}>通知中心</span>
@@ -149,7 +149,7 @@ function Header({ pageTitle, onMenuToggle }: HeaderProps) {
 
           {userOpen && (
             <div className="absolute right-0 top-12 w-56 rounded-xl border shadow-2xl z-50 overflow-hidden"
-              style={{ backgroundColor: 'var(--color-bg-surface)', borderColor: 'var(--color-border-default)' }}>
+              style={{ backgroundColor: 'rgba(30, 41, 59, 0.95)', backdropFilter: 'blur(12px)', borderColor: 'var(--color-border-default)' }}>
               <div className="px-4 py-3 border-b" style={{ borderColor: 'var(--color-border-default)' }}>
                 <div className="text-sm font-bold" style={{ color: 'var(--color-text-primary)' }}>{user?.name || '用户'}</div>
                 <div className="text-xs" style={{ color: 'var(--color-text-secondary)' }}>{user?.email || ''}</div>
