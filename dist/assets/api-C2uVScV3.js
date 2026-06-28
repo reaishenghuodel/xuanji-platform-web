@@ -1,1 +1,0 @@
-async function e(e,t={}){let n=await fetch(`/api${e}`,{headers:{"Content-Type":`application/json`,...t.headers},...t});if(!n.ok){let e=await n.json().catch(()=>({}));throw Error(e.detail||`API请求失败: ${n.status}`)}return n.json()}var t={async create(t){return e(`/v1/diagnosis/`,{method:`POST`,body:JSON.stringify(t)})}};export{t};
