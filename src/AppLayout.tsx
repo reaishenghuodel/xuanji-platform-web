@@ -1,24 +1,23 @@
-import { Outlet, useLocation, useNavigate } from 'react-router-dom'
+import { Outlet, useLocation } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import Sidebar from './components/Sidebar'
 import Header from './components/Header'
-import { useAuth } from './context/AuthContext'
 
 const pageTitleMap: Record<string, string> = {
-  '/app/dashboard': '数据概览',
-  '/app/strategy': 'GEO策略规划',
-  '/app/monitor': '品牌AI监测',
-  '/app/citations': 'AI引用监测',
-  '/app/prompts': '提示覆盖分析',
-  '/app/keywords': '智能选词',
-  '/app/content': 'AI内容创作',
-  '/app/materials': '达人素材库',
-  '/app/knowledge': 'AI知识库',
-  '/app/reports': 'GEO诊断报告',
-  '/app/ranking': '团队数据大盘',
-  '/app/cases': 'GEO案例',
-  '/app/alerts': '告警中心',
-  '/app/settings': '系统设置',
+  '/dashboard': '数据概览',
+  '/strategy': 'GEO策略规划',
+  '/monitor': '品牌AI监测',
+  '/citations': 'AI引用监测',
+  '/prompts': '提示覆盖分析',
+  '/keywords': '智能选词',
+  '/content': 'AI内容创作',
+  '/materials': '达人素材库',
+  '/knowledge': 'AI知识库',
+  '/reports': 'GEO诊断报告',
+  '/ranking': '团队数据大盘',
+  '/cases': 'GEO案例',
+  '/alerts': '告警中心',
+  '/settings': '系统设置',
 }
 
 function applyStoredTheme() {
@@ -51,24 +50,12 @@ function applyStoredTheme() {
 
 function AppLayout() {
   const location = useLocation()
-  const navigate = useNavigate()
-  const { isAuthenticated } = useAuth()
   const pageTitle = pageTitleMap[location.pathname] || '璇玑智科'
   const [mobileSidebarOpen, setMobileSidebarOpen] = useState(false)
 
   useEffect(() => {
     applyStoredTheme()
   }, [])
-
-  useEffect(() => {
-    if (!isAuthenticated) {
-      navigate('/', { replace: true })
-    }
-  }, [isAuthenticated, navigate])
-
-  if (!isAuthenticated) {
-    return null
-  }
 
   return (
     <div className="flex h-screen w-full overflow-hidden" style={{ backgroundColor: 'var(--color-bg-primary)' }}>

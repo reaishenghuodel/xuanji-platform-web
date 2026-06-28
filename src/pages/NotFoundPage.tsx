@@ -45,12 +45,12 @@ function NotFoundPage() {
           </div>
           <div className="flex flex-wrap gap-2">
             {[
-              { label: '首页看板', path: '/app/dashboard' },
-              { label: '品牌监测', path: '/app/monitor' },
-              { label: '智能选词', path: '/app/keywords' },
-              { label: '内容创作', path: '/app/content' },
-              { label: '诊断报告', path: '/app/reports' },
-              { label: '系统设置', path: '/app/settings' },
+              { label: '首页看板', path: '/dashboard' },
+              { label: '品牌监测', path: '/monitor' },
+              { label: '智能选词', path: '/keywords' },
+              { label: '内容创作', path: '/content' },
+              { label: '诊断报告', path: '/reports' },
+              { label: '系统设置', path: '/settings' },
             ].map(item => (
               <button
                 key={item.path}

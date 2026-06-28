@@ -1,13 +1,9 @@
 import { Suspense, lazy } from 'react'
-import { HashRouter, Routes, Route } from 'react-router-dom'
+import { HashRouter, Routes, Route, Navigate } from 'react-router-dom'
 import AppLayout from './AppLayout'
 import { AuthProvider } from './context/AuthContext'
 import { ToastProvider } from './context/ToastContext'
 
-// Eager load landing page (first impression) and layout
-import LandingPage from './pages/LandingPage'
-
-// Lazy load all app pages for code splitting
 const Dashboard = lazy(() => import('./pages/Dashboard'))
 const BrandMonitor = lazy(() => import('./pages/BrandMonitor'))
 const KeywordTool = lazy(() => import('./pages/KeywordTool'))
@@ -20,11 +16,11 @@ const Settings = lazy(() => import('./pages/Settings'))
 const CitationsPage = lazy(() => import('./pages/CitationsPage'))
 const PromptCoverage = lazy(() => import('./pages/PromptCoverage'))
 const StrategyPage = lazy(() => import('./pages/StrategyPage'))
-
 const KnowledgeBase = lazy(() => import('./pages/KnowledgeBase'))
 const AlertsPage = lazy(() => import('./pages/AlertsPage'))
 const NotFoundPage = lazy(() => import('./pages/NotFoundPage'))
 const DiagnosisPage = lazy(() => import('./pages/DiagnosisPage'))
+const LandingPage = lazy(() => import('./pages/LandingPage'))
 
 function PageLoader() {
   return (
@@ -43,89 +39,97 @@ function App() {
       <ToastProvider>
         <HashRouter>
           <Routes>
-            <Route path="/" element={<LandingPage />} />
+            {/* 默认路由：直接进入应用 */}
+            <Route path="/" element={<Navigate to="/dashboard" replace />} />
+            
+            {/* 营销落地页（独立入口） */}
+            <Route path="/landing" element={
+              <Suspense fallback={<PageLoader />}>
+                <LandingPage />
+              </Suspense>
+            } />
+            
+            {/* 免费诊断页 */}
             <Route path="/diagnosis" element={
               <Suspense fallback={<PageLoader />}>
                 <DiagnosisPage />
               </Suspense>
             } />
-            <Route path="/app" element={<AppLayout />}>
-              <Route index element={
+            
+            {/* 应用主界面 - 所有功能页面 */}
+            <Route element={<AppLayout />}>
+              <Route path="/dashboard" element={
                 <Suspense fallback={<PageLoader />}>
                   <Dashboard />
                 </Suspense>
               } />
-              <Route path="dashboard" element={
-                <Suspense fallback={<PageLoader />}>
-                  <Dashboard />
-                </Suspense>
-              } />
-              <Route path="strategy" element={
+              <Route path="/strategy" element={
                 <Suspense fallback={<PageLoader />}>
                   <StrategyPage />
                 </Suspense>
               } />
-              <Route path="knowledge" element={
+              <Route path="/knowledge" element={
                 <Suspense fallback={<PageLoader />}>
                   <KnowledgeBase />
                 </Suspense>
               } />
-              <Route path="alerts" element={
+              <Route path="/alerts" element={
                 <Suspense fallback={<PageLoader />}>
                   <AlertsPage />
                 </Suspense>
               } />
-              <Route path="monitor" element={
+              <Route path="/monitor" element={
                 <Suspense fallback={<PageLoader />}>
                   <BrandMonitor />
                 </Suspense>
               } />
-              <Route path="keywords" element={
+              <Route path="/keywords" element={
                 <Suspense fallback={<PageLoader />}>
                   <KeywordTool />
                 </Suspense>
               } />
-              <Route path="content" element={
+              <Route path="/content" element={
                 <Suspense fallback={<PageLoader />}>
                   <ContentCreate />
                 </Suspense>
               } />
-              <Route path="materials" element={
+              <Route path="/materials" element={
                 <Suspense fallback={<PageLoader />}>
                   <MaterialLibrary />
                 </Suspense>
               } />
-              <Route path="reports" element={
+              <Route path="/reports" element={
                 <Suspense fallback={<PageLoader />}>
                   <Report />
                 </Suspense>
               } />
-              <Route path="ranking" element={
+              <Route path="/ranking" element={
                 <Suspense fallback={<PageLoader />}>
                   <RankingPage />
                 </Suspense>
               } />
-              <Route path="cases" element={
+              <Route path="/cases" element={
                 <Suspense fallback={<PageLoader />}>
                   <CasePage />
                 </Suspense>
               } />
-              <Route path="citations" element={
+              <Route path="/citations" element={
                 <Suspense fallback={<PageLoader />}>
                   <CitationsPage />
                 </Suspense>
               } />
-              <Route path="prompts" element={
+              <Route path="/prompts" element={
                 <Suspense fallback={<PageLoader />}>
                   <PromptCoverage />
                 </Suspense>
               } />
-              <Route path="settings" element={
+              <Route path="/settings" element={
                 <Suspense fallback={<PageLoader />}>
                   <Settings />
                 </Suspense>
               } />
             </Route>
+            
             <Route path="*" element={
               <Suspense fallback={<PageLoader />}>
                 <NotFoundPage />

@@ -5,20 +5,20 @@ import {
 } from 'lucide-react'
 
 const navItems = [
-  { path: '/app/dashboard', label: '首页看板', icon: LayoutDashboard },
-  { path: '/app/strategy', label: 'GEO策略规划', icon: Map },
-  { path: '/app/monitor', label: '品牌AI监测', icon: Eye },
-  { path: '/app/citations', label: 'AI引用监测', icon: Quote },
-  { path: '/app/prompts', label: '提示覆盖', icon: Target },
-  { path: '/app/keywords', label: '智能选词', icon: Wand2 },
-  { path: '/app/content', label: 'AI内容创作', icon: PenTool },
-  { path: '/app/materials', label: '达人素材库', icon: Users },
-  { path: '/app/knowledge', label: 'AI知识库', icon: BookOpen },
-  { path: '/app/ranking', label: '团队数据大盘', icon: BarChart3 },
-  { path: '/app/reports', label: '诊断报告', icon: FileBarChart },
-  { path: '/app/cases', label: 'GEO案例', icon: Briefcase },
-  { path: '/app/alerts', label: '告警中心', icon: Bell },
-  { path: '/app/settings', label: '系统设置', icon: Settings },
+  { path: '/dashboard', label: '首页看板', icon: LayoutDashboard },
+  { path: '/strategy', label: 'GEO策略规划', icon: Map },
+  { path: '/monitor', label: '品牌AI监测', icon: Eye },
+  { path: '/citations', label: 'AI引用监测', icon: Quote },
+  { path: '/prompts', label: '提示覆盖', icon: Target },
+  { path: '/keywords', label: '智能选词', icon: Wand2 },
+  { path: '/content', label: 'AI内容创作', icon: PenTool },
+  { path: '/materials', label: '达人素材库', icon: Users },
+  { path: '/knowledge', label: 'AI知识库', icon: BookOpen },
+  { path: '/ranking', label: '团队数据大盘', icon: BarChart3 },
+  { path: '/reports', label: '诊断报告', icon: FileBarChart },
+  { path: '/cases', label: 'GEO案例', icon: Briefcase },
+  { path: '/alerts', label: '告警中心', icon: Bell },
+  { path: '/settings', label: '系统设置', icon: Settings },
 ]
 
 interface SidebarProps {
