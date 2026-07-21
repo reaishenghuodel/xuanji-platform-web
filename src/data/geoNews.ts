@@ -12,6 +12,40 @@ export const geoNews: GeoNewsItem[] = [
 
   {
     id: 1,
+    title: 'GEO重塑2026内容分发范式：AI搜索引用率成品牌新KPI，Schema标记引用率提升47%',
+    summary: 'ContentGrip与Search Engine Land联合分析指出，AI搜索引擎正从链接展示转向答案生成，品牌需从SEO思维全面转向GEO思维。',
+    content: `2026年GEO（生成式引擎优化）正从根本上重塑数字内容分发格局。
+
+核心发现：
+1. AI搜索引擎从"展示链接"转向"生成答案"，传统点击率KPI失效
+2. Schema.org结构化标记页面在AI搜索中引用率平均提升47%
+3. 72小时内发布的新鲜内容享有明显时效性加权
+4. 语义完整性内容被引用概率最高
+
+品牌行动指南：建立GEO审计机制，定期检测品牌在ChatGPT、Perplexity、DeepSeek等平台中的提及率和引用准确性。`,
+    source: 'ContentGrip',
+    date: '2026-07-21',
+    tags: ['GEO', '内容策略', 'AI搜索', 'Schema.org', '品牌可见性'],
+  },
+  {
+    id: 2,
+    title: '全球AI Agent企业支出2026年底将达150亿美元，80%企业年内完成部署',
+    summary: 'Reuters与Gartner联合数据显示，AI Agent已从实验阶段全面转入规模化生产部署，Agentic AI成为企业数字化转型核心引擎。',
+    content: `全球AI Agent企业级部署正呈现爆发式增长。
+
+核心数据：
+- 全球Agentic AI支出预计2026年底达150亿美元
+- 超80%企业将在2026年内使用某种形式的AI Agent
+- McKinsey指出Agent是生成式AI的下一前沿
+- 从客服到风控，AI Agent正覆盖企业运营全链条
+
+企业应优先在高ROI场景（客服自动化、数据治理、营销洞察）部署Agent，并建立完善的监控和治理机制。`,
+    source: 'Reuters',
+    date: '2026-07-21',
+    tags: ['AI Agent', '企业应用', 'Agentic AI', '数字化转型'],
+  },
+  {
+    id: 3,
     title: 'GEO行业进入快速洗牌+高速爆发叠加期，AI APP月活突破4.4亿',
     summary: '亦莘咨询发布GEO行业研究报告，315曝光"投毒式GEO"后行业迎来规范化转折，信通院发布权威评测标准。',
     content: `亦莘咨询发布《GEO行业现状与趋势研究报告》，全面梳理行业发展格局。
@@ -28,7 +62,7 @@ export const geoNews: GeoNewsItem[] = [
     tags: ['GEO', '行业报告', 'AI搜索', '规范化', '市场格局'],
   },
   {
-    id: 2,
+    id: 4,
     title: '五大AI搜索平台引用机制深度对比：GEO必须差异化适配',
     summary: 'Perplexity/ChatGPT/DeepSeek/Kimi/文心一言技术路线分化，使用Schema.org标记的页面引用率平均提升47%。',
     content: `2026年AI搜索生态呈现多极分化格局，五大平台各有独特的引用机制和内容偏好：
@@ -50,7 +84,7 @@ Kimi：200万token上下文窗口，偏好完整长文档和白皮书
     tags: ['GEO', 'AI搜索', '多平台策略', 'Schema.org', '引用机制'],
   },
   {
-    id: 3,
+    id: 5,
     title: 'GEO从论文到工程：火山引擎解析完整算法体系，AutoGEO可见度提升超50%',
     summary: '火山引擎开发者社区系统拆解GEO技术栈，涵盖普林斯顿9种方法和CMU AutoGEO自动化方案。',
     content: `火山引擎开发者社区发布GEO完整技术栈解析。
@@ -67,7 +101,7 @@ GEO已从学术概念进入工程落地阶段。`,
     tags: ['GEO', '算法', 'AutoGEO', '技术前沿'],
   },
   {
-    id: 4,
+    id: 6,
     title: '品牌多平台AI可见性成必修课：ChatGPT周活9亿、Perplexity年营收增335%',
     summary: 'AI搜索平台用户规模爆发，品牌需制定差异化GEO策略覆盖多平台。',
     content: `2026年AI搜索平台呈现爆发式增长。
@@ -84,7 +118,7 @@ GEO已从学术概念进入工程落地阶段。`,
     tags: ['AI搜索', '品牌可见性', 'GEO策略'],
   },
   {
-    id: 5,
+    id: 7,
     title: '2026企业AI Agent规模化元年：79%企业已部署，MCP协议成行业标准',
     summary: '全球79%组织已启动Agent部署，市场规模达187亿美元。',
     content: `2026年被公认为AI Agent规模化落地元年。
