@@ -12,6 +12,66 @@ export const geoNews: GeoNewsItem[] = [
 
   {
     id: 1,
+    title: 'Google发布AI搜索质量评估新框架，GEO合规化进入技术标准化阶段',
+    summary: 'Google Search Central更新AI搜索质量评估指南，首次将"生成式引用准确性"纳入官方排名信号体系，标志着GEO从营销策略升级为技术标准。',
+    content: `Google Search Central发布重大更新，在官方搜索质量评估指南中新增"AI生成式引用质量"评估维度。
+
+核心变化：
+1. 首次将"被AI引用的准确性"纳入页面质量评分体系
+2. 结构化数据标记（Schema.org）的权重进一步提升，FAQ和HowTo类型页面优先级提高
+3. 引入"引用可溯源性"指标——被AI引用的内容需具备清晰的数据来源标注
+4. 明确打击"投毒式GEO"行为，对刻意操纵AI引用结果的页面实施降权
+
+行业影响：GEO优化从"技巧层面"正式进入"技术标准层面"，企业需要建立系统化的GEO技术栈，而非仅依赖内容优化。`,
+    source: 'Google Search Central',
+    date: '2026-07-22',
+    tags: ['GEO', 'AI搜索', 'Google', '技术标准', '合规化'],
+  },
+  {
+    id: 2,
+    title: 'Perplexity推出"品牌答案卡"功能，AI搜索商业化路径日趋清晰',
+    summary: 'Perplexity正式上线品牌答案卡（Brand Answer Card）功能，允许品牌方提交结构化信息供AI直接引用，开启AI搜索商业化新阶段。',
+    content: `Perplexity官方博客宣布正式上线"品牌答案卡"（Brand Answer Card）功能，这是AI搜索平台首次向品牌方开放结构化内容提交通道。
+
+功能详情：
+1. 品牌方可通过Perplexity for Brands平台提交结构化产品信息、FAQ和品牌故事
+2. 提交内容经过Perplexity审核后，可在相关查询中被优先引用
+3. 引用结果附带"品牌认证"标识，提升用户信任度
+4. 提供品牌可见性分析仪表盘，展示品牌在各查询中的引用频次和上下文
+
+商业模式：采用"按引用付费"（Pay-per-Citation）模式，品牌仅在内容被实际引用时计费。
+
+行业意义：这是AI搜索平台从"信息检索工具"向"商业生态"转型的标志性事件，GEO的价值链正在形成闭环。`,
+    source: 'Perplexity Blog',
+    date: '2026-07-22',
+    tags: ['Perplexity', 'AI搜索', '商业化', '品牌营销', 'GEO'],
+  },
+  {
+    id: 3,
+    title: 'IDC报告：2026年全球GEO服务市场规模达42亿美元，中国增速领跑亚太',
+    summary: 'IDC发布首份GEO市场追踪报告，全球GEO服务支出预计2026年达42亿美元，中国市场同比增长187%，成为增速最快的区域市场。',
+    content: `IDC发布全球首份GEO（生成式引擎优化）服务市场追踪报告，量化这一新兴市场的规模和增长趋势。
+
+核心数据：
+1. 2026年全球GEO服务市场规模预计达42亿美元，较2025年增长156%
+2. 中国市场以187%的同比增速领跑亚太地区，市场规模约58亿元人民币
+3. 北美市场占全球份额的41%，但亚太增速是北美的2.3倍
+4. 企业GEO支出中，技术工具占38%，内容优化占29%，咨询服务占22%，监测分析占11%
+
+中国市场特征：
+- 信通院YD/T3980-2026标准推动行业规范化
+- 蓝色光标、科大讯飞等上市公司加速布局
+- 中小企业GEO渗透率仅12%，增长空间巨大
+
+IDC预测：到2028年，GEO服务将与传统SEO服务市场规模持平，成为数字营销基础设施的核心组成部分。`,
+    source: 'IDC',
+    date: '2026-07-22',
+    tags: ['GEO', '市场规模', 'IDC', '行业报告', '中国市场'],
+  },
+
+
+  {
+    id: 4,
     title: 'GEO重塑2026内容分发范式：AI搜索引用率成品牌新KPI，Schema标记引用率提升47%',
     summary: 'ContentGrip与Search Engine Land联合分析指出，AI搜索引擎正从链接展示转向答案生成，品牌需从SEO思维全面转向GEO思维。',
     content: `2026年GEO（生成式引擎优化）正从根本上重塑数字内容分发格局。
@@ -28,7 +88,7 @@ export const geoNews: GeoNewsItem[] = [
     tags: ['GEO', '内容策略', 'AI搜索', 'Schema.org', '品牌可见性'],
   },
   {
-    id: 2,
+    id: 5,
     title: '全球AI Agent企业支出2026年底将达150亿美元，80%企业年内完成部署',
     summary: 'Reuters与Gartner联合数据显示，AI Agent已从实验阶段全面转入规模化生产部署，Agentic AI成为企业数字化转型核心引擎。',
     content: `全球AI Agent企业级部署正呈现爆发式增长。
@@ -45,7 +105,7 @@ export const geoNews: GeoNewsItem[] = [
     tags: ['AI Agent', '企业应用', 'Agentic AI', '数字化转型'],
   },
   {
-    id: 3,
+    id: 6,
     title: 'GEO行业进入快速洗牌+高速爆发叠加期，AI APP月活突破4.4亿',
     summary: '亦莘咨询发布GEO行业研究报告，315曝光"投毒式GEO"后行业迎来规范化转折，信通院发布权威评测标准。',
     content: `亦莘咨询发布《GEO行业现状与趋势研究报告》，全面梳理行业发展格局。
@@ -62,7 +122,7 @@ export const geoNews: GeoNewsItem[] = [
     tags: ['GEO', '行业报告', 'AI搜索', '规范化', '市场格局'],
   },
   {
-    id: 4,
+    id: 7,
     title: '五大AI搜索平台引用机制深度对比：GEO必须差异化适配',
     summary: 'Perplexity/ChatGPT/DeepSeek/Kimi/文心一言技术路线分化，使用Schema.org标记的页面引用率平均提升47%。',
     content: `2026年AI搜索生态呈现多极分化格局，五大平台各有独特的引用机制和内容偏好：
@@ -84,7 +144,7 @@ Kimi：200万token上下文窗口，偏好完整长文档和白皮书
     tags: ['GEO', 'AI搜索', '多平台策略', 'Schema.org', '引用机制'],
   },
   {
-    id: 5,
+    id: 8,
     title: 'GEO从论文到工程：火山引擎解析完整算法体系，AutoGEO可见度提升超50%',
     summary: '火山引擎开发者社区系统拆解GEO技术栈，涵盖普林斯顿9种方法和CMU AutoGEO自动化方案。',
     content: `火山引擎开发者社区发布GEO完整技术栈解析。
@@ -101,7 +161,7 @@ GEO已从学术概念进入工程落地阶段。`,
     tags: ['GEO', '算法', 'AutoGEO', '技术前沿'],
   },
   {
-    id: 6,
+    id: 9,
     title: '品牌多平台AI可见性成必修课：ChatGPT周活9亿、Perplexity年营收增335%',
     summary: 'AI搜索平台用户规模爆发，品牌需制定差异化GEO策略覆盖多平台。',
     content: `2026年AI搜索平台呈现爆发式增长。
@@ -118,7 +178,7 @@ GEO已从学术概念进入工程落地阶段。`,
     tags: ['AI搜索', '品牌可见性', 'GEO策略'],
   },
   {
-    id: 7,
+    id: 10,
     title: '2026企业AI Agent规模化元年：79%企业已部署，MCP协议成行业标准',
     summary: '全球79%组织已启动Agent部署，市场规模达187亿美元。',
     content: `2026年被公认为AI Agent规模化落地元年。
