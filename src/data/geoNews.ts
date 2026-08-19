@@ -14,6 +14,50 @@ export interface GeoNewsItem {
 // GEO行业资讯列表（按日期倒序，最新的在前面）
 export const geoNews: GeoNewsItem[] = [
   {
+    id: 245,
+    title: 'DeepSeek V4 Pro正式版发布：Agent能力跃升，Terminal Bench评分逼近全球第一',
+    summary: 'DeepSeek于8月12日深夜正式发布V4-Pro-0813版本，重点强化Agent能力，Terminal Bench 2.1评分达87.9分，支持100万Token上下文。',
+    content: `DeepSeek于2026年8月12日深夜正式发布V4-Pro-0813版本。
+
+核心升级：
+1. Agent能力跃升：Terminal Bench 2.1评分达87.9分，距全球第一仅差0.1分
+2. 软件工程能力突破：DeepSWE测试从12.8分飙升至62.7分
+3. 超长上下文：支持100万Token上下文长度
+4. Responses功能：新增Responses API
+5. 极致性价比：输出定价仅0.87美元/百万Token
+
+GEO影响：DeepSeek作为国内最大AI搜索入口之一，V4 Pro将改变品牌内容被AI引用的方式。`,
+    source: 'DeepSeek官方 / 机器之心',
+    date: '2026-08-19',
+    tags: ['DeepSeek', 'AI搜索', 'Agent', '大模型'],
+  },
+  {
+    id: 246,
+    title: '京东健康发布AI调度智能体"大为"，医疗AI Agent规模化落地',
+    summary: '京东健康推出AI调度智能体"大为"，Q1用户已超2025年全年。Google AMIE多智能体医疗系统同步引发关注。',
+    content: `2026年8月中旬，医疗AI Agent领域迎来重要进展。
+
+京东健康"大为"：基于京医千询大模型，可自动分诊、推荐科室。Q1用户已超2025年全年，618服务用户同比增长近4倍。
+
+Google AMIE：基于Gemini模型，全球首个实时视频问诊AI医疗系统，标志Agent向多模态实时交互跃迁。`,
+    source: '京东健康 / Google Research',
+    date: '2026-08-19',
+    tags: ['AI智能体', '医疗AI', 'Agent', '企业应用'],
+  },
+  {
+    id: 247,
+    title: '2026年8月GEO监测平台横评：ChatGPT份额下滑至53.7%，国产工具崛起',
+    summary: 'ChatGPT份额降至53.7%，Gemini升至26.7%。国内GEO市场规模达30亿元，透镜GEO等国产平台加速成熟。',
+    content: `2026年8月GEO监测市场变化：
+
+AI搜索：ChatGPT份额从77.6%降至53.7%，Gemini升至26.7%，Claude升至近8%。我国868款AI服务完成备案。
+
+GEO市场：国内规模达30亿元，较三年前增长35倍，超68%企业已将GEO纳入核心预算。透镜GEO等国产平台凭借真实用户行为模拟引擎崛起。`,
+    source: 'CSDN / Similarweb / 易观分析',
+    date: '2026-08-19',
+    tags: ['GEO', 'AI搜索', '监测工具', '市场报告'],
+  },
+  {
     id: 242,
     title: 'Google AI Overview推出品牌署名功能，GEO优化进入「可信源」时代',
     summary: 'Google宣布AI Overview搜索结果将支持品牌署名和来源标注功能，已进行GEO优化的品牌将获得优先展示和可信源标识。',
