@@ -14,6 +14,59 @@ export interface GeoNewsItem {
 // GEO行业资讯列表（按日期倒序，最新的在前面）
 export const geoNews: GeoNewsItem[] = [
   {
+    id: 251,
+    title: 'ChatGPT全球市场份额首次跌破50%，GEO优化需全面覆盖多AI平台',
+    summary: 'Sensor Tower报告显示ChatGPT市场份额降至46.4%，Gemini升至27.7%，Claude达10.3%。AI搜索多平台并存格局下，品牌GEO优化策略需全面升级。',
+    content: `Sensor Tower《2026年AI现状报告》显示，截至2026年5月底，ChatGPT全球AI助手市场份额降至46.4%，三年半来首次跌破50%。
+
+GEO优化启示：
+1. 多平台覆盖：品牌需同时优化ChatGPT、Gemini、Claude等多平台AI可见度
+2. 策略升级：单一平台优化已不足够，需建立全域AI可见度管理体系
+3. Gemini崛起：凭借Google生态快速崛起至27.7%，成为GEO优化不可忽视的平台
+4. Claude增长：一年增长五倍至10.3%，技术用户群体快速扩大
+5. 流量分散：AI搜索流量分散化趋势明显，品牌需调整预算分配策略`,
+    source: 'Sensor Tower / TechCrunch',
+    date: '2026-08-21',
+    tags: ['ChatGPT', 'Gemini', 'Claude', 'AI搜索', 'GEO优化', '市场份额'],
+  },
+  {
+    id: 252,
+    title: '2026年上半年GEO市场规模突破80亿元，企业级GEO服务进入爆发期',
+    summary: '第三方监测数据显示2026年上半年国内企业级GEO服务市场规模突破80亿元，同比增长超210%，超67%的B2B企业已将GEO纳入年度预算。',
+    content: `据第三方行业监测机构数据，2026年上半年国内GEO服务市场呈现爆发式增长。
+
+核心数据：
+1. 市场规模：突破80亿元，同比增长超210%
+2. 企业渗透：超67%的B2B企业已将GEO纳入年度数字营销预算
+3. 竞争格局：头部服务商在技术系统完整度、AI平台覆盖广度方面形成壁垒
+4. 技术演进：从内容优化向全链路GEO解决方案升级
+5. 标准建设：行业标准和效果评估体系逐步完善
+
+趋势：GEO已从"可选"变为"必选"，成为企业数字获客核心基建。`,
+    source: '凤凰网科技',
+    date: '2026-08-21',
+    tags: ['GEO', '市场规模', 'AI搜索优化', '企业应用'],
+  },
+  {
+    id: 253,
+    title: 'Cloudflare发布智能体云平台全套产品，AI Agent基础设施标准化加速',
+    summary: 'Cloudflare Agents Week 2026发布智能体计算、安全、工具箱、编排平台等全线产品，支持MCP/A2A协议，推动AI Agent规模化部署。',
+    content: `Cloudflare于2026年4月举办Agents Week 2026，发布智能体云平台全线产品。
+
+核心能力：
+1. 智能体计算：专用计算环境，支持长时间运行
+2. 安全防护：防prompt注入、权限控制
+3. 工具箱：标准化工具调用，支持MCP/A2A协议
+4. 编排平台：多智能体协作与监控
+5. 智能体Web：面向Agent的新型Web范式
+
+GEO关联：AI Agent基础设施标准化将改变品牌内容被AI理解和引用的方式，GEO优化需考虑Agent场景。`,
+    source: 'Cloudflare Blog',
+    date: '2026-08-21',
+    tags: ['AI智能体', 'Cloudflare', 'MCP协议', 'Agent平台', 'GEO'],
+  },
+
+  {
     id: 248,
     title: 'GEO优化成为企业AI营销新标配：生成式引擎优化技术深度解析',
     summary: '随着AI搜索工具的普及，GEO生成式引擎优化正在重塑SEO行业。传统SEO向AI优化转型成为趋势。',
