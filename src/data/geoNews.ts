@@ -14,6 +14,69 @@ export interface GeoNewsItem {
 // GEO行业资讯列表（按日期倒序，最新的在前面）
 export const geoNews: GeoNewsItem[] = [
   {
+    id: 257,
+    title: 'GEO优化15大策略权威指南发布，品牌需加速从SEO向GEO转型',
+    summary: 'Search Engine Journal发布全面GEO优化指南，系统梳理15大生成式引擎优化策略。GEO已从学术概念演进为主流SEO实践，品牌需建立专门GEO优化能力。',
+    content: `Search Engine Journal发布GEO（生成式引擎优化）权威指南，系统梳理15大优化策略。
+
+GEO优化核心策略：
+1. 权威写作：AI引擎偏好引用权威、结构化、有数据支撑的内容
+2. 统计数据：添加具体数据和统计信息可显著提升AI引用率
+3. 来源引用：引用可信来源和行业报告增强内容可信度
+4. 结构化内容：清晰的标题层级和列表结构更易被AI解析引用
+5. 多平台覆盖：需同时优化ChatGPT、Perplexity、Gemini等多AI搜索平台
+
+行动建议：
+- 建立全域AI可见度监测体系
+- 优化品牌在多AI平台的引用率和情感倾向
+- 从SEO思维转向GEO思维`,
+    source: 'Search Engine Journal',
+    date: '2026-08-23',
+    tags: ['GEO优化', '生成式引擎优化', 'SEO转型', 'AI搜索', '品牌策略'],
+  },
+  {
+    id: 258,
+    title: 'ChatGPT Search成为Google有力竞争者，AI搜索GEO优化迎来新机遇',
+    summary: "Barron's分析显示ChatGPT已成为特定搜索品类的合法Google替代方案。Similarweb数据显示AI搜索引荐流量持续增长，品牌GEO优化需覆盖ChatGPT Search。",
+    content: `ChatGPT Search已成为Google搜索的有力竞争者，为GEO优化带来新机遇。
+
+GEO优化新维度：
+1. 搜索替代：ChatGPT在信息查询品类成为Google合法替代
+2. 流量转移：AI搜索引荐流量持续增长，品牌曝光渠道拓宽
+3. 品牌机遇：通过GEO优化在ChatGPT回答中获得高曝光
+4. 竞争格局：ChatGPT、Perplexity、Gemini形成AI搜索三强
+5. 优化重点：需针对ChatGPT的引用偏好专门优化品牌内容
+
+GEO策略建议：
+- 监测品牌在ChatGPT搜索结果中的出现情况
+- 优化品牌内容以提升AI引用率
+- 建立跨AI搜索平台的品牌可见度监测体系`,
+    source: "Barron's / Similarweb",
+    date: '2026-08-23',
+    tags: ['ChatGPT', 'AI搜索', 'GEO优化', '搜索竞争', '品牌可见度'],
+  },
+  {
+    id: 259,
+    title: 'McKinsey：AI Agent是生成式AI下一个前沿，GEO优化需扩展至智能体场景',
+    summary: 'McKinsey发布报告指出AI Agent具备自主规划和任务执行能力，是生成式AI下一个重大前沿。品牌GEO优化策略需扩展至AI Agent场景，覆盖智能体信息抓取和引用。',
+    content: `AI Agent正成为生成式AI的下一个重大前沿，对GEO优化提出新要求。
+
+GEO优化新维度：
+1. 智能体引用：AI Agent在执行任务时会主动抓取和引用品牌信息
+2. 自主决策：Agent从"被动回答"转向"主动推荐"，影响品牌曝光
+3. 工作流集成：Agent深度集成企业工具，品牌信息流经更多触点
+4. 多Agent系统：Agent-to-Agent通信成为下一波浪潮
+5. 治理框架：需建立Agent级别的品牌信息管理策略
+
+GEO策略扩展：
+- 将AI Agent场景纳入GEO优化范围
+- 优化品牌在Agent工具调用中的可见度
+- 建立Agent治理框架和安全合规机制`,
+    source: 'McKinsey & Company',
+    date: '2026-08-23',
+    tags: ['AI Agent', 'GEO优化', '智能体', 'McKinsey', '企业应用'],
+  },
+  {
     id: 254,
     title: 'Google AI Mode全球上线，GEO优化迎来历史性拐点',
     summary: 'Google于2026年8月正式推出AI Mode搜索功能，传统SEO向GEO转型加速。全球GEO市场2026年预计突破50亿美元，品牌需全面升级AI可见度管理策略。',
