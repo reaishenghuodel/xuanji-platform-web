@@ -14,6 +14,56 @@ export interface GeoNewsItem {
 // GEO行业资讯列表（按日期倒序，最新的在前面）
 export const geoNews: GeoNewsItem[] = [
   {
+    id: 260,
+    title: 'CapGo AI发布2026年GEO终极指南：GEO=SEO+RAG，程序化GEO成核心策略',
+    summary: 'CapGo AI系统阐述GEO=SEO+RAG公式，提出程序化GEO是覆盖海量AI搜索问题的关键策略。ChatGPT月活1.8亿，Perplexity搜索量同比增858%。',
+    content: `CapGo AI发布《生成式引擎优化(GEO)与AI搜索2026终极指南》。
+
+核心洞察：
+1. GEO公式：GEO = SEO + RAG
+2. 程序化GEO：自动化批量生成AI优化网页，覆盖海量长尾搜索问题
+3. AI搜索增长：ChatGPT月活1.8亿，Perplexity搜索量同比增858%
+4. 搜索行为变化：AI搜索查询平均10个词 vs Google的2个词
+5. 市场预测：2028年AI搜索预计占搜索市场14%份额
+
+GEO实施策略：
+- 规模化覆盖：每月150主题×10语言
+- 多步AI Agent协作生成高质量内容
+- 通过Bing Webmaster Tools监测AI提及量`,
+    source: 'CapGo AI',
+    date: '2026-08-24',
+    tags: ['GEO优化', '程序化GEO', 'AI搜索', 'SEO+RAG'],
+  },
+  {
+    id: 261,
+    title: '2026年AI搜索三强格局：ChatGPT、Perplexity、DeepSeek差异化竞争',
+    summary: 'ChatGPT Search以对话体验领跑，Perplexity以学术溯源著称，DeepSeek在中国市场快速崛起。品牌需建立跨平台GEO优化体系。',
+    content: `2026年AI搜索市场三强格局分析。
+
+竞争格局：
+1. ChatGPT Search：交互最自然，搜索融入对话
+2. Perplexity AI：学术级溯源，实时搜索
+3. DeepSeek：中国市场崛起，编程能力逼近GPT
+
+品牌GEO优化需覆盖多平台，建立统一监测体系。`,
+    source: '行业横评',
+    date: '2026-08-24',
+    tags: ['AI搜索', 'ChatGPT', 'Perplexity', 'DeepSeek', 'GEO'],
+  },
+  {
+    id: 262,
+    title: 'WAIC 2026智能体成C位：企业级AI Agent迎来爆发，2027年普及率目标超70%',
+    summary: 'WAIC 2026上智能体成为核心焦点，阿里百度腾讯字节齐亮智能体产品。国家发布智能体创新政策，首批AI终端L3认证公布。',
+    content: `WAIC 2026上智能体成为绝对"C位"。
+
+厂商布局：阿里千问AI眼镜、百度搭子、腾讯AI Buddy、字节豆包手机。
+政策：国家发布《智能体规范应用与创新发展实施意见》，2027年普及率超70%。
+认证：首批AI终端L3认证，华为、荣耀、小米等11款产品达标。`,
+    source: '搜狐 / WAIC 2026',
+    date: '2026-08-24',
+    tags: ['AI智能体', 'WAIC', '企业Agent', 'L3认证'],
+  },
+  {
     id: 257,
     title: 'GEO优化15大策略权威指南发布，品牌需加速从SEO向GEO转型',
     summary: 'Search Engine Journal发布全面GEO优化指南，系统梳理15大生成式引擎优化策略。GEO已从学术概念演进为主流SEO实践，品牌需建立专门GEO优化能力。',
