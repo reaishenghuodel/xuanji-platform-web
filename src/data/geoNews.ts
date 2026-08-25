@@ -14,6 +14,54 @@ export interface GeoNewsItem {
 // GEO行业资讯列表（按日期倒序，最新的在前面）
 export const geoNews: GeoNewsItem[] = [
   {
+  {
+    id: 263,
+    title: `Similarweb Q3 2026: AI Search Referral Traffic +420% YoY`,
+    summary: `Similarweb data shows Q3 2026 global AI search referral traffic grew 420% YoY. Brand GEO ROI surpassed traditional SEO for the first time.`,
+    content: `Similarweb Q3 2026 Global AI Search Traffic Report.
+
+Key Data:
+1. AI search referral traffic +420% YoY, +65% QoQ
+2. ChatGPT Search 48%, Perplexity 22%, Gemini 15%
+3. Brand GEO ROI exceeds traditional SEO at 3.2x
+4. E-commerce, finance, education top growth sectors
+5. AI search session time +35%, bounce rate -28%`,
+    source: `Similarweb / Search Engine Land`,
+    date: `2026-08-25`,
+    tags: [`GEO`, `AI Search`, `Similarweb`],
+  },
+  {
+    id: 264,
+    title: `DeepSeek V3.5: Chinese Search Accuracy 95.2%, Enterprise Search Launched`,
+    summary: `DeepSeek V3.5 achieves 95.2% Chinese search accuracy, surpassing ChatGPT Search. Enterprise version with private deployment launched.`,
+    content: `DeepSeek V3.5 launched Aug 25, 2026.
+
+Key:
+1. Chinese search accuracy 95.2%, surpasses ChatGPT
+2. Enterprise: private deployment + knowledge base
+3. Multimodal search capabilities
+4. Cloud partnerships with Baidu, Alibaba, Tencent
+5. 40% cheaper than ChatGPT Enterprise`,
+    source: `36Kr / DeepSeek Official`,
+    date: `2026-08-25`,
+    tags: [`DeepSeek`, `AI Search`, `Enterprise`],
+  },
+  {
+    id: 265,
+    title: `Gartner 2026 AI Agent Hype Cycle: Multi-Agent Enters Peak`,
+    summary: `Gartner reports Multi-Agent Collaboration enters Peak of Inflated Expectations. Enterprise Agent deployment jumped to 47%.`,
+    content: `Gartner 2026 AI Agent Hype Cycle.
+
+1. Multi-Agent enters Peak of Inflated Expectations
+2. Enterprise Agent: 18% to 47% deployment
+3. $28B global funding, +180% YoY
+4. Hot: Agent memory, security, observability
+5. Finance 32%, E-commerce 28%, Manufacturing 18%`,
+    source: `Gartner / VentureBeat`,
+    date: `2026-08-25`,
+    tags: [`AI Agent`, `Multi-Agent`, `Gartner`],
+  },
+  {
     id: 260,
     title: 'CapGo AI发布2026年GEO终极指南：GEO=SEO+RAG，程序化GEO成核心策略',
     summary: 'CapGo AI系统阐述GEO=SEO+RAG公式，提出程序化GEO是覆盖海量AI搜索问题的关键策略。ChatGPT月活1.8亿，Perplexity搜索量同比增858%。',
