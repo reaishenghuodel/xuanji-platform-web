@@ -14,6 +14,79 @@ export interface GeoNewsItem {
 // GEO行业资讯列表（按日期倒序，最新的在前面）
 export const geoNews: GeoNewsItem[] = [
   {
+    id: 268,
+    title: `凤凰网发布2026年北美GEO服务商横评：ChatGPT、Perplexity成海外用户决策主流入口`,
+    summary: `凤凰网财经8月发布北美GEO优化服务商横评，指出ChatGPT、Google AI Overview、Perplexity、Gemini已深度融入北美用户消费决策流程，出海企业品牌在AI回答中的可见度直接影响市场转化。`,
+    content: `凤凰网财经于2026年8月发布《北美GEO优化服务商推荐：2026年四家出海服务与效果横评》。
+
+核心发现：
+1. 北美是全球生成式AI搜索渗透率较高的市场，ChatGPT、Google AI Overview、Perplexity、Gemini已成主流决策入口
+2. 传统谷歌SEO聚焦网页排名，GEO优化重点适配海外AI大模型语义规则，支持多语种多地域适配
+3. 出海企业面临四大痛点：海外AI平台适配复杂、多语言文化门槛高、GDPR合规要求严格、海外落地经验稀缺
+4. 服务商选型三维度：海外办公节点覆盖、多语言多市场GEO经验、合规体系
+5. 智推时代GenOptima位列首位，覆盖ChatGPT、Google AI、Gemini、Perplexity等主流平台
+
+品牌行动建议：
+- 出海企业需将GEO优化纳入北美市场核心战略
+- 优先选择具备海外办公节点和GDPR合规体系的服务商
+- 关注品牌在AI回答中的首提率和Top3推荐位表现`,
+    source: `凤凰网财经`,
+    date: `2026-08-28`,
+    tags: [`GEO`, `北美市场`, `AI搜索`, `出海营销`],
+  },
+  {
+    id: 269,
+    title: `2026年8月AI产业月报：DeepSeek发布V4视觉模型，OpenAI开源Codex框架，Anthropic首度盈利`,
+    summary: `区块周刊8月AI产业月报：DeepSeek推出V4-Flash-Vision补齐多模态短板，OpenAI开源Codex Harness框架，Anthropic单季营收破115亿美元首度盈利。英伟达联手贝莱德扩建5000亿美元AI融资平台。`,
+    content: `区块周刊于2026年8月发布AI产业月报，整合本月最值得关注的AI大事。
+
+模型与产品：
+1. DeepSeek上线V4-Flash-Vision-Exp，支持图片输入，多模态Agent能力接近Anthropic旗舰，价格仅十分之一
+2. OpenAI用Apache-2.0协议开源Codex Harness框架（含CLI、SDK、app-server），DeepSeek也开源Harness（MIT协议，社区插件超2600个）
+3. 匿名模型OX Alpha登顶编程榜，疑似智谱未发布旗舰，支持文本/图像/视频输入，上下文104.8万Token
+4. OpenAI降价GPT-5.6 Sol超20%，未来三个月输入4美元、输出20美元/百万Token
+
+资本与基建：
+- 英伟达联手贝莱德、黑石扩建5000亿美元AI融资平台
+- 英伟达60亿美元获取AI编程公司Poolside模型技术授权
+- Anthropic Q2营收突破115亿美元，首度单季转盈
+- Stripe以逾70亿美元收购AI模型网关OpenRouter
+
+政策与安全：
+- 五部门新规落地：AI拟人化互动服务管理办法正式施行
+- OpenAI揭露下一代Astra网攻能力逼近Critical级
+- Anthropic上调失准风险评级`,
+    source: `区块周刊BlockWeeks`,
+    date: `2026-08-28`,
+    tags: [`DeepSeek`, `OpenAI`, `Anthropic`, `AI模型`, `产业月报`],
+  },
+  {
+    id: 270,
+    title: `企业级AI Agent全面爆发：中国市场规模达449亿元，采纳率跃升至40.3%`,
+    summary: `CSDN发布2026年AI Agent全景报告，全球AI智能体市场规模预计达175亿美元，中国企业级市场从212亿元跃升至449亿元。Gartner预测40%企业应用将集成AI智能体，多Agent协作、私有化部署成核心趋势。`,
+    content: `CSDN于2026年8月发布《2026国内外主流AI Agent：基于大模型的自主智能体产品》深度报告。
+
+核心数据：
+1. 全球AI智能体市场规模预计达175亿美元，中国企业级市场从212亿元跃升至449亿元
+2. 企业AI Agent采纳率：2024年底17.3% → 2025年中25.4% → 2026年中40.3%
+3. Gartner预测到2026年底40%企业应用将集成AI智能体
+4. 金融（32%）、电商（28%）、制造（18%）领跑Agent采纳
+
+技术趋势：
+- Agent从"对话"范式全面转向"执行"范式，核心能力：感知→规划→执行→记忆
+- 多Agent协作进入工程化落地阶段，企业可为智能体匹配专属岗位与权限
+- 私有化部署成刚需，73%企业将数据主权列为AI部署首要考量
+- 国产Agent产品崛起：百度搭子、腾讯WorkBuddy（DAU破1300万）、实在Agent（OSWorld评测全球第一）
+
+行业影响：
+- 企业软件正从"被操作"迈向"被智能体自主操作"
+- Agent+Skills架构成标准范式，实现"大脑+技能库"组合
+- 安全性、可审计性取代参数规模成为竞争焦点`,
+    source: `CSDN / 沙丘智库`,
+    date: `2026-08-28`,
+    tags: [`AI智能体`, `Agent`, `企业应用`, `市场报告`],
+  },
+  {
     id: 266,
     title: `艾瑞咨询发布《2026年重点行业GEO差异化策略研究报告》：AI搜索渗透率在八大行业显著分化`,
     summary: `艾瑞咨询8月发布GEO行业研究报告，系统分析消费决策场景中AI搜索行为特征，覆盖手机、汽车、美妆、医疗等八大行业，提出差异化GEO落地策略。`,
