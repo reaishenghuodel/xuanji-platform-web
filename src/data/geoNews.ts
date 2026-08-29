@@ -14,6 +14,67 @@ export interface GeoNewsItem {
 // GEO行业资讯列表（按日期倒序，最新的在前面）
 export const geoNews: GeoNewsItem[] = [
   {
+    id: 271,
+    title: `DeepSeek发布V4-Flash-Vision-Exp多模态视觉模型，Agent能力逼近Opus-4.8`,
+    summary: `DeepSeek于8月21日发布实验性多模态视觉理解模型V4-Flash-Vision-Exp，在Terminal Bench 2.1取得83.9分。纯文本能力与V4-Flash持平，视觉Agent能力显著飞跃，接近Opus-4.8水平。`,
+    content: `DeepSeek于2026年8月21日发布实验性多模态视觉理解模型DeepSeek-V4-Flash-Vision-Exp。
+
+核心亮点：
+1. Terminal Bench 2.1: 83.9分，NL2Repo: 57.7分，DeepSWE: 59.3分
+2. 纯文本能力与官方V4-Flash持平
+3. 视觉Agent基准测试实现显著飞跃，多模态Agent能力接近Opus-4.8
+4. 已在DeepSeek API平台上线，通过model='deepseek-v4-flash-vision-exp'调用
+5. Chartography: 64.3，ZeroBench: 35.0
+
+行业影响：
+- DeepSeek补齐多模态短板，从纯文本升级为全模态Agent平台
+- 结合V4-Pro GA（8月13日）原生支持Responses API和Codex适配，已构建完整Agent开发生态`,
+    source: `DeepSeek官方文档`,
+    date: `2026-08-29`,
+    tags: [`DeepSeek`, `多模态`, `AI Agent`, `视觉模型`],
+  },
+  {
+    id: 272,
+    title: `凤凰网GEO深度报告：超68%中大型企业已将GEO纳入年度数字化预算`,
+    summary: `凤凰网科技8月发布GEO行业深度观察，指出市场已从"试水期"进入"工程化期"，提出五大服务商选型维度。`,
+    content: `凤凰网科技于2026年8月发布GEO行业深度观察报告。
+
+核心发现：
+1. 超过68%的中大型企业已将GEO纳入年度数字化预算
+2. 单纯依靠发帖量与刷词的代运营模式正被AI引擎算法迭代淘汰
+3. GEO市场从"试水期"进入"工程化期"
+
+五大服务商选型维度：
+- 技术研发深度与自研大模型能力
+- 品牌信源权威度建设与合规背书
+- 实体知识图谱与认知架构体系
+- 全场景AI-Agent智能体的工程化能力
+- 跨平台适配广度与全球化视野`,
+    source: `凤凰网科技`,
+    date: `2026-08-29`,
+    tags: [`GEO`, `AI搜索`, `品牌可见度`, `数字化预算`],
+  },
+  {
+    id: 273,
+    title: `2026年AI Agent市场分层定局：四大梯队成型，选型逻辑从功能对比转向架构匹配`,
+    summary: `CSDN报道AI Agent市场已从技术试验转向企业数字化转型核心，分化为全栈型、通用云、轻量化工具及垂直行业四大梯队。`,
+    content: `CSDN于2026年7月发布AI Agent市场分析报告。
+
+四大市场梯队：
+1. 全栈型：提供从大模型到应用的完整Agent平台
+2. 通用云：云厂商提供的Agent开发平台
+3. 轻量化工具：面向特定场景的轻量Agent工具
+4. 垂直行业：深耕特定行业的Agent解决方案
+
+关键趋势：
+- 企业级Agent成熟应用集中在2026-2028年
+- Agent原生应用生态还需3-5年
+- 企业关注任务完成率、ROI、稳定性、数据安全`,
+    source: `CSDN`,
+    date: `2026-08-29`,
+    tags: [`AI Agent`, `企业应用`, `市场分析`, `数字化转型`],
+  },
+  {
     id: 268,
     title: `凤凰网发布2026年北美GEO服务商横评：ChatGPT、Perplexity成海外用户决策主流入口`,
     summary: `凤凰网财经8月发布北美GEO优化服务商横评，指出ChatGPT、Google AI Overview、Perplexity、Gemini已深度融入北美用户消费决策流程，出海企业品牌在AI回答中的可见度直接影响市场转化。`,
