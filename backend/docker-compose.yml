@@ -1,0 +1,68 @@
+version: '3.8'
+
+services:
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - APP_ENV=production
+      - DEBUG=false
+      - SECRET_KEY=change-me-in-production
+      - DEEPSEEK_API_KEY=YOUR_DEEPSEEK_API_KEY
+      - DEEPSEEK_BASE_URL=https://api.deepseek.com
+      - DEEPSEEK_MODEL=deepseek-v4-flash
+      - DOUBAO_API_KEY=YOUR_VOLCENGINE_API_KEY-c7ab-4408-ae9c-336c89380ffb-2d16a
+      - DOUBAO_BASE_URL=https://ark.cn-beijing.volces.com/api/v3
+      - DOUBAO_MODEL=doubao-seed-2-0-mini-260428
+      - REDIS_URL=redis://redis:6379/0
+      - DATABASE_URL=postgresql://xuanji:xuanji@db:5432/xuanji
+      - CELERY_BROKER_URL=redis://redis:6379/1
+      - CELERY_RESULT_BACKEND=redis://redis:6379/2
+    depends_on:
+      - redis
+      - db
+    restart: unless-stopped
+
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    restart: unless-stopped
+
+  db:
+    image: postgres:16-alpine
+    environment:
+      - POSTGRES_USER=xuanji
+      - POSTGRES_PASSWORD=xuanji
+      - POSTGRES_DB=xuanji
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    restart: unless-stopped
+
+  # Celery Worker (optional, for async tasks)
+  worker:
+    build: .
+    command: celery -A app.core.celery worker --loglevel=info
+    environment:
+      - CELERY_BROKER_URL=redis://redis:6379/1
+      - CELERY_RESULT_BACKEND=redis://redis:6379/2
+    depends_on:
+      - redis
+    restart: unless-stopped
+
+  # Celery Beat (optional, for scheduled tasks)
+  beat:
+    build: .
+    command: celery -A app.core.celery beat --loglevel=info
+    environment:
+      - CELERY_BROKER_URL=redis://redis:6379/1
+      - CELERY_RESULT_BACKEND=redis://redis:6379/2
+    depends_on:
+      - redis
+    restart: unless-stopped
+
+volumes:
+  postgres_data:

@@ -1,0 +1,81 @@
+version: '3.8'
+
+services:
+  # FastAPI 后端服务
+  backend:
+    build: ./backend
+    container_name: xuanji-backend
+    ports:
+      - "8000:8000"
+    env_file:
+      - ./backend/.env
+    depends_on:
+      - db
+      - redis
+    restart: unless-stopped
+    networks:
+      - xuanji-network
+
+  # PostgreSQL 数据库
+  db:
+    image: postgres:16-alpine
+    container_name: xuanji-db
+    environment:
+      POSTGRES_USER: xuanji
+      POSTGRES_PASSWORD: xuanji
+      POSTGRES_DB: xuanji
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    restart: unless-stopped
+    networks:
+      - xuanji-network
+
+  # Redis 缓存
+  redis:
+    image: redis:7-alpine
+    container_name: xuanji-redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    restart: unless-stopped
+    networks:
+      - xuanji-network
+
+  # Celery Worker（定时任务）
+  celery-worker:
+    build: ./backend
+    container_name: xuanji-celery-worker
+    command: celery -A tasks worker --loglevel=info
+    env_file:
+      - ./backend/.env
+    depends_on:
+      - db
+      - redis
+    restart: unless-stopped
+    networks:
+      - xuanji-network
+
+  # Celery Beat（定时任务调度）
+  celery-beat:
+    build: ./backend
+    container_name: xuanji-celery-beat
+    command: celery -A tasks beat --loglevel=info
+    env_file:
+      - ./backend/.env
+    depends_on:
+      - db
+      - redis
+    restart: unless-stopped
+    networks:
+      - xuanji-network
+
+volumes:
+  postgres_data:
+  redis_data:
+
+networks:
+  xuanji-network:
+    driver: bridge
