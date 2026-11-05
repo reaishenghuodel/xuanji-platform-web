@@ -1,5 +1,6 @@
 import { Suspense, lazy } from 'react'
 import { HashRouter, Routes, Route } from 'react-router-dom'
+import NewsPage from './pages/NewsPage'
 import AppLayout from './AppLayout'
 import { AuthProvider } from './context/AuthContext'
 import { ToastProvider } from './context/ToastContext'
@@ -44,6 +45,7 @@ function App() {
         <HashRouter>
           <Routes>
             <Route path="/" element={<LandingPage />} />
+            <Route path="/news" element={<NewsPage />} />
             <Route path="/diagnosis" element={
               <Suspense fallback={<PageLoader />}>
                 <DiagnosisPage />
